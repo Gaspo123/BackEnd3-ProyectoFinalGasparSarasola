@@ -12,7 +12,3 @@ async function dbConnect() {
 
 export default dbConnect;
 
-export const env = {
-  PORT: process.env.PORT,
-  MONGO_LINK: process.env.MONGO_LINK,
-};

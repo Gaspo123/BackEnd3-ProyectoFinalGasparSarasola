@@ -8,7 +8,7 @@ const create = async (data) => {
 
 const read = async (page) => {
   // const all = await Product.find({}, "-__v -createdAt -updatedAt").sort("name");
-  const all = await Product.paginate({}, { page, sort: { name: 1}, select: "-__v -createdAt -updatedAt"});
+  const all = await Product.paginate({}, { page, sort: { name: 1 }, select: "-__v -createdAt -updatedAt"});
   return all;
 };
 

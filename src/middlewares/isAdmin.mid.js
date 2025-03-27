@@ -1,5 +1,5 @@
 import CustomError from "../utils/errors/custom.error.js";
-import { badAuth, forbidden } from "../utils/errors/dictionary.errors.js";
+import { badAuth, forbidden } from "../utils/errors/dictionary.error.js";
 import { verifyTokenUtil } from "../utils/token.util.js";
 
 function isAdmin(req, res, next) {
